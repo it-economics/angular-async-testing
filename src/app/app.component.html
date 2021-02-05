@@ -1,0 +1,14 @@
+
+<div *ngIf="initialized">
+<div>
+  <div id="init">Component initialized!</div>
+</div>
+<div>
+  <button id="button" (click)="click()">ClickMe to execute</button><div *ngIf="clicked" id="executed">Call executed!</div>
+</div>
+</div>
+<div *ngIf="!initialized">
+  Initializing component, please wait...
+  <div>
+
+<router-outlet></router-outlet>
