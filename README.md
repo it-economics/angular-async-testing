@@ -1,4 +1,4 @@
-# HelloWorldApp
+# Async-Angular-Testing
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.3.
 
@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Bibliography for test examples
+
+https://jasmine.github.io/tutorials/async
+https://angular.io/api/core/testing/
+
+### Patterns covered
+* [a relative link](src/app/app.component.nooooo.spec.ts) No pattern, this failing test does not handle any async calls
+* [a relative link](src/app/app.component.noway.spec.ts) Callbacks inside Test, app works, but test does not wait for callbacks to complete. (Dangerous!!!)
+* [a relative link](src/app/app.component.done.spec.ts) Jasmine Done callback (https://jasmine.github.io/tutorials/async#callbacks)
+* [a relative link](src/app/app.component.angular.spec.ts) Angular waitForAsync (https://angular.io/api/core/testing/waitForAsync)
+* [a relative link](src/app/app.component.asyncawait.spec.ts) async/await pattern (https://jasmine.github.io/tutorials/async#asyncawait)
+
+### Patterns not covered
+* fakeAsync / flush / tick (https://angular.io/api/core/testing/fakeAsync)
+* Promises in Jasmine (https://jasmine.github.io/tutorials/async#promises)
