@@ -32,11 +32,11 @@ https://jasmine.github.io/tutorials/async
 https://angular.io/api/core/testing/
 
 ### Patterns covered
-* [a relative link](src/app/app.component.nooooo.spec.ts) No pattern, this failing test does not handle any async calls
-* [a relative link](src/app/app.component.noway.spec.ts) Callbacks inside Test, app works, but test does not wait for callbacks to complete. (Dangerous!!!)
-* [a relative link](src/app/app.component.done.spec.ts) Jasmine Done callback (https://jasmine.github.io/tutorials/async#callbacks)
-* [a relative link](src/app/app.component.angular.spec.ts) Angular waitForAsync (https://angular.io/api/core/testing/waitForAsync)
-* [a relative link](src/app/app.component.asyncawait.spec.ts) async/await pattern (https://jasmine.github.io/tutorials/async#asyncawait)
+* [Test with no pattern](src/app/app.component.nooooo.spec.ts) No pattern, this failing test does not handle any async calls
+* [Test with Callbacks](src/app/app.component.noway.spec.ts) Callbacks inside Test, app works, but test does not wait for callbacks to complete. (Dangerous!!!)
+* [Test with Done Callback](src/app/app.component.done.spec.ts) Jasmine Done callback (https://jasmine.github.io/tutorials/async#callbacks)
+* [Test with Angular waitForAsync](src/app/app.component.angular.spec.ts) Angular waitForAsync (https://angular.io/api/core/testing/waitForAsync)
+* [Test with async/await](src/app/app.component.asyncawait.spec.ts) async/await pattern (https://jasmine.github.io/tutorials/async#asyncawait)
 
 ### Patterns not covered
 * fakeAsync / flush / tick (https://angular.io/api/core/testing/fakeAsync)
