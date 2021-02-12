@@ -31,7 +31,7 @@ describe('AppComponent: async-await', () => {
     expect(element.textContent).toContain('initialized');
   });
 
-  it('clicking button will call service', async () => {
+    it('clicking button will call service', async () => {
     const fixture = TestBed.createComponent(AppComponent);
     const compiled = fixture.nativeElement;
     fixture.detectChanges();
