@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Constants} from "./constants";
+const {INIT, SERVICE} = Constants;
 
 @Component({
   selector: 'app-root',
@@ -10,13 +12,18 @@ export class AppComponent implements OnInit  {
   clicked: boolean = false;
 
   async ngOnInit(): Promise<any> {
-    await callService(2000);
+    await callService(INIT);
     this.initialized = true;
   }
 
   async click() {
-    await callService(1000);
+    await callService(SERVICE);
     this.clicked = true;
+
+    /* Evil crash after everything seems to be fine
+    await callService(SERVICE + 4);
+    throw new Error("Haha gotcha!!!");
+    */
 
   }
 }
